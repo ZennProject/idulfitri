@@ -1,0 +1,188 @@
+  body {
+    /* background-color: #3a7d7c; */
+    background: url('img/WhatsApp\ Image\ 2025-03-30\ at\ 01.20.22.jpeg') no-repeat center center fixed;
+    font-family: Arial, sans-serif;
+    background-position-y: top ('1px');
+    text-align: center;
+    color: #3a7d7c;
+}
+.decor-left, .decor-right {
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: auto;
+    opacity: 70%;
+}
+.decor-left {
+    left: 0;
+}
+.decor-right {
+    right: 0;
+    transform: scaleX(-1);  
+}
+
+.popup, .popup-card {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.popup-content, .popup-card-content{
+    background: #e4c0a4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    color: #333;
+}
+.hidden {
+    display: none;
+}
+.container, .message-box {
+    display: none;
+}
+.card {
+    display: none;
+    background: url('img/card.jpeg') no-repeat center center;
+    background-size: cover;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 5.4cm;
+    height: 8.56cm;
+    max-width: 90%;
+    min-height: fit-content;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    border: 2px solid #33716f;
+    position: relative;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.popup-card-content {
+    width: 5.4cm;
+    height: 9cm;
+    max-width: 90%;
+    min-height: fit-content;
+    padding: 20px;
+    padding-bottom: 0px;
+    background: url('img/card.jpeg') no-repeat center center;
+    background-size: cover;
+    color: #333;
+    border: 2px solid #33716f;
+    border-radius: 10px;
+    position: relative;
+}
+.popup-chat {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    width: 120px;
+    height: auto;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: flex;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+.fade-out {
+    opacity: 0;
+}
+.back {
+    font-style: italic;
+}
+.author1 {
+    text-align: center;
+    left: 3%;
+    top: 90%;
+    font-size: 12px;
+    position: absolute;
+    right: 5px;
+}
+.author2 {
+    text-align: right;
+    font-size: 12px;
+    position: absolute;
+    right: 5px;
+}
+.info {
+    text-align: center;
+    font-size: 8px;
+    color: red;
+}
+.card::before {
+    content: '\f1ea';
+    font-family: FontAwesome;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #003366;
+}
+.card-inner {
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.flipped {
+    transform: rotateY(180deg);
+}
+.front, .back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+}
+.back {
+    transform: rotateY(180deg);
+    display: none;
+}
+.close-btn {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    color: white;
+    background-color: #33716f;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+}
+input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 20px;
+    border: 1px solid #33716f;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    background: whitesmoke;
+    color: #333;
+}
+ button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #e4c0a4;
+    color: #333;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #33716f;
+    color: white;
+}
