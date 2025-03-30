@@ -45,7 +45,7 @@ function showPopupCard() {
             popupChat.style.display = 'none';
             popupChat.classList.remove('fade-out');
         }, 1000);
-    }, 2000);
+    }, 3000);
 }
 function sendMessage() {
     let message = document.getElementById('messageInput').value;
