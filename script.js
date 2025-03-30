@@ -11,12 +11,15 @@ let audio = document.getElementById('eidSong');
                 document.querySelector('.card').style.display = 'block';
                 document.getElementById('messageBox').style.display = 'block';
                 audio.play();
+            }else {
+                alert("isi nama dulu yaa...");
             }
         }
 
 
 function closePopupCard() {
     document.getElementById('popupCard').style.display = 'none';
+    document.getElementById('extraImage').style.display = 'none';
 }
 function flipCard() {
     let card = document.getElementById('cardInner');
@@ -33,6 +36,7 @@ function flipCard() {
 }
 function showPopupCard() {
     document.getElementById('popupCard').style.display = 'flex';
+    document.getElementById('extraImage').style.display = 'block';
     let popupChat = document.getElementById('popupChat');
     popupChat.style.display = 'flex';
     setTimeout(() => {
@@ -59,6 +63,9 @@ function sendMessage() {
                 document.getElementById('messageInput').value = '';
             })
             .catch(error => console.error('Error:', error));
+    }{
+        alert("Pesan tidak boleh kosong!");
+        return;
     }
 }
 
